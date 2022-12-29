@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: gusto
+    database: blu-api-dev-359208
+    schema: Gusto
+    tables:
+      - name: contractors
+      - name: contractor_payments
+      - name: employees
+      - name: earning_types
+      - name: users
+      - name: pay_rolls
+      - name: locations
+      - name: company_benefits
+      - name: company_benefits_by_gusto
+      - name: company_benefits_by_gusto_requirements
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 
+
+# models:
+#   - name: contractors_category
+#   - name: pay_schedules_category
+#   - name: pay_periods_transaction
