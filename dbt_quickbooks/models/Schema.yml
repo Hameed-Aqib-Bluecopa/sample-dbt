@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+  - name: quickbook
+    database: blu-api-dev-359208
+    schema: destination_default_qb
+    tables:
+      - name: customers
+      - name: customers_BillAddr
+      - name: customers_CurrencyRef
+      - name: customers_DefaultTaxCodeRef
+      - name: customers_Fax
+      - name: customers_MetaData
+      - name: customers_Mobile
+      - name: customers_ParentRef
+      - name: customers_PaymentMethodRef
+      - name: customers_PrimaryEmailAddr
+      - name: customers_PrimaryPhone
+      - name: customers_SalesTermRef
+      - name: customers_ShipAddr
+      - name: customers_WebAddr
+      - name: items
+      - name: items_AssetAccountRef
+      - name: items_ExpenseAccountRef
+      - name: items_IncomeAccountRef
+      - name: items_MetaData
+      - name: payment_methods
+      - name: payment_methods_MetaData
+      - name: journal_entries
+      - name: journal_entries_CurrencyRef
+      - name: journal_entries_MetaData
+      - name: journal_entries_TaxRateRef
+      - name: journal_entries_Line
+      - name: journal_entries_Line_JournalEntryLineDetail
+      - name: journal_entries_Line_JournalEntryLineDetail_AccountRef
+
+models:
+  - name: customers_category
+  - name: items_category
+  - name: payment_methods_category
+  - name: journal_entries_transaction
