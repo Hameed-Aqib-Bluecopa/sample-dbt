@@ -1,0 +1,1025 @@
+
+
+============================== 2022-12-22 11:34:05.886764 | 81ca16bb-56e4-4b6b-8146-675fc3d2f00d ==============================
+[0m11:34:05.886773 [info ] [MainThread]: Running with dbt=1.3.1
+[0m11:34:05.887081 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m11:34:05.887208 [debug] [MainThread]: Tracking: tracking
+[0m11:34:05.888404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39359e0ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39359e0790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39359e1240>]}
+[0m11:34:06.443560 [debug] [MainThread]: Executing "git --help"
+[0m11:34:06.445056 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:34:06.445242 [debug] [MainThread]: STDERR: "b''"
+[0m11:34:06.446329 [debug] [MainThread]: Acquiring new bigquery connection "debug"
+[0m11:34:06.446586 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:34:06.451779 [debug] [MainThread]: On debug: select 1 as id
+[0m11:34:08.990651 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=blu-api-dev-359208&j=bq:3acac051-22ef-4593-8772-b2ce7cad560f:US&page=queryresults
+[0m11:34:08.991395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3936e13d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f391929dfc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f391929de40>]}
+[0m11:34:08.991951 [debug] [MainThread]: Flushing usage events
+[0m11:34:09.990120 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-12-22 11:34:21.169356 | 329359b8-b54b-4e45-af65-29ff30bc3368 ==============================
+[0m11:34:21.169367 [info ] [MainThread]: Running with dbt=1.3.1
+[0m11:34:21.169685 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m11:34:21.169798 [debug] [MainThread]: Tracking: tracking
+[0m11:34:21.170731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f988ed600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9fb650b0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9fb73188b0>]}
+[0m11:34:21.179125 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m11:34:21.179568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '329359b8-b54b-4e45-af65-29ff30bc3368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f988cf940>]}
+[0m11:34:21.196516 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m11:34:21.203962 [debug] [MainThread]: Parsing macros/etc.sql
+[0m11:34:21.206430 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m11:34:21.228081 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m11:34:21.230943 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m11:34:21.233565 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m11:34:21.241484 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m11:34:21.242873 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+[0m11:34:21.258428 [debug] [MainThread]: Parsing macros/materializations/copy.sql
+[0m11:34:21.260569 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m11:34:21.262508 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m11:34:21.263363 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m11:34:21.263910 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m11:34:21.264588 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m11:34:21.264982 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m11:34:21.265260 [debug] [MainThread]: Parsing macros/utils/timestamps.sql
+[0m11:34:21.265939 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m11:34:21.266319 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m11:34:21.266590 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m11:34:21.266992 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m11:34:21.267410 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m11:34:21.267833 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m11:34:21.268185 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m11:34:21.269107 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m11:34:21.269958 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m11:34:21.270403 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m11:34:21.270734 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m11:34:21.271089 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m11:34:21.280582 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m11:34:21.283378 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m11:34:21.288078 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+[0m11:34:21.290309 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m11:34:21.298934 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m11:34:21.300304 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m11:34:21.301597 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m11:34:21.303354 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m11:34:21.309586 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m11:34:21.315517 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m11:34:21.319154 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m11:34:21.320867 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m11:34:21.323420 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m11:34:21.327955 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m11:34:21.339487 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m11:34:21.349749 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m11:34:21.357280 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m11:34:21.358403 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m11:34:21.366433 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m11:34:21.370731 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m11:34:21.371886 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m11:34:21.373004 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m11:34:21.375115 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m11:34:21.375946 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m11:34:21.379374 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m11:34:21.380811 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m11:34:21.384392 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m11:34:21.386556 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m11:34:21.397064 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+[0m11:34:21.401330 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m11:34:21.402323 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m11:34:21.409088 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m11:34:21.418700 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m11:34:21.424017 [debug] [MainThread]: Parsing macros/python_model/python.sql
+[0m11:34:21.427890 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m11:34:21.428510 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m11:34:21.428975 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m11:34:21.429933 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m11:34:21.430487 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m11:34:21.431469 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m11:34:21.432083 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m11:34:21.432746 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m11:34:21.434181 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m11:34:21.434899 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m11:34:21.435603 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m11:34:21.436229 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m11:34:21.436758 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m11:34:21.440921 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m11:34:21.441620 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m11:34:21.442201 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m11:34:21.442953 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m11:34:21.443720 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m11:34:21.444474 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m11:34:21.445293 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m11:34:21.445893 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m11:34:21.446575 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m11:34:21.447184 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m11:34:21.447968 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m11:34:21.449053 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m11:34:21.450327 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m11:34:21.451066 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m11:34:21.451750 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m11:34:21.452432 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m11:34:21.453932 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m11:34:21.454912 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m11:34:21.455882 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m11:34:21.634159 [debug] [MainThread]: 1699: static parser successfully parsed contractors_category.sql
+[0m11:34:21.721610 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_gusto.example
+
+[0m11:34:21.725573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '329359b8-b54b-4e45-af65-29ff30bc3368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f988ed6f0>]}
+[0m11:34:21.731527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '329359b8-b54b-4e45-af65-29ff30bc3368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f988cc1c0>]}
+[0m11:34:21.731943 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics
+[0m11:34:21.734117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '329359b8-b54b-4e45-af65-29ff30bc3368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9fb650b0a0>]}
+[0m11:34:21.735437 [info ] [MainThread]: 
+[0m11:34:21.736234 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m11:34:21.737071 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208"
+[0m11:34:21.737346 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:34:22.564961 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208_dbt_gusto_main"
+[0m11:34:22.565980 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:34:23.093060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '329359b8-b54b-4e45-af65-29ff30bc3368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f988ed930>]}
+[0m11:34:23.094305 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:34:23.094994 [info ] [MainThread]: 
+[0m11:34:23.100753 [debug] [Thread-1 (]: Began running node model.dbt_gusto.contractors_category
+[0m11:34:23.101436 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_gusto_main.contractors_category ............... [RUN]
+[0m11:34:23.102690 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_gusto.contractors_category"
+[0m11:34:23.103145 [debug] [Thread-1 (]: Began compiling node model.dbt_gusto.contractors_category
+[0m11:34:23.103477 [debug] [Thread-1 (]: Compiling model.dbt_gusto.contractors_category
+[0m11:34:23.110351 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_gusto.contractors_category"
+[0m11:34:23.111409 [debug] [Thread-1 (]: finished collecting timing info
+[0m11:34:23.111822 [debug] [Thread-1 (]: Began executing node model.dbt_gusto.contractors_category
+[0m11:34:23.155085 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_gusto.contractors_category"
+[0m11:34:23.155906 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:34:23.161931 [debug] [Thread-1 (]: On model.dbt_gusto.contractors_category: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_gusto", "target_name": "dev", "node_id": "model.dbt_gusto.contractors_category"} */
+
+  
+    
+
+    create or replace table `blu-api-dev-359208`.`dbt_gusto_main`.`contractors_category`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select distinct
+id
+, ein
+, type
+, uuid
+, email
+, zip
+, city
+, state
+, country
+, street_1
+, street_2
+, has_ein
+, has_ssn
+, version
+, is_active
+, last_name
+, onboarded
+, wage_type
+, company_id
+, first_name
+, start_date
+, work_state
+, hourly_rate
+, company_uuid
+, business_name
+, middle_initial
+, payment_method
+, onboarding_status
+, file_new_hire_report
+from `blu-api-dev-359208`.`Gusto`.`contractors` c
+left join `blu-api-dev-359208`.`Gusto`.`contractors_address` ca
+on c._airbyte_contractors_hashid = ca._airbyte_contractors_hashid
+    );
+  
+[0m11:34:24.034031 [debug] [Thread-1 (]: BigQuery adapter: Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_gusto", "target_name": "dev", "node_id": "model.dbt_gusto.contractors_category"} */
+
+  
+    
+
+    create or replace table `blu-api-dev-359208`.`dbt_gusto_main`.`contractors_category`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select distinct
+id
+, ein
+, type
+, uuid
+, email
+, zip
+, city
+, state
+, country
+, street_1
+, street_2
+, has_ein
+, has_ssn
+, version
+, is_active
+, last_name
+, onboarded
+, wage_type
+, company_id
+, first_name
+, start_date
+, work_state
+, hourly_rate
+, company_uuid
+, business_name
+, middle_initial
+, payment_method
+, onboarding_status
+, file_new_hire_report
+from `blu-api-dev-359208`.`Gusto`.`contractors` c
+left join `blu-api-dev-359208`.`Gusto`.`contractors_address` ca
+on c._airbyte_contractors_hashid = ca._airbyte_contractors_hashid
+    );
+  
+[0m11:34:24.034573 [debug] [Thread-1 (]: BigQuery adapter: 404 Not found: Dataset blu-api-dev-359208:dbt_gusto_main was not found in location US
+
+Location: US
+Job ID: 6c24ca3f-004d-4e1f-85b6-9ee00d1d698d
+
+[0m11:34:24.035245 [debug] [Thread-1 (]: finished collecting timing info
+[0m11:34:24.036383 [debug] [Thread-1 (]: Runtime Error in model contractors_category (models/contractors_category.sql)
+  404 Not found: Dataset blu-api-dev-359208:dbt_gusto_main was not found in location US
+  
+  Location: US
+  Job ID: 6c24ca3f-004d-4e1f-85b6-9ee00d1d698d
+  
+[0m11:34:24.036976 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '329359b8-b54b-4e45-af65-29ff30bc3368', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f9882ace0>]}
+[0m11:34:24.037709 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model dbt_gusto_main.contractors_category ...... [[31mERROR[0m in 0.93s]
+[0m11:34:24.038578 [debug] [Thread-1 (]: Finished running node model.dbt_gusto.contractors_category
+[0m11:34:24.040191 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m11:34:24.040580 [info ] [MainThread]: 
+[0m11:34:24.040788 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.30 seconds (2.30s).
+[0m11:34:24.040974 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:34:24.041079 [debug] [MainThread]: Connection 'model.dbt_gusto.contractors_category' was properly closed.
+[0m11:34:24.060633 [info ] [MainThread]: 
+[0m11:34:24.061031 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m11:34:24.061315 [info ] [MainThread]: 
+[0m11:34:24.061557 [error] [MainThread]: [33mRuntime Error in model contractors_category (models/contractors_category.sql)[0m
+[0m11:34:24.061803 [error] [MainThread]:   404 Not found: Dataset blu-api-dev-359208:dbt_gusto_main was not found in location US
+[0m11:34:24.062038 [error] [MainThread]:   
+[0m11:34:24.062272 [error] [MainThread]:   Location: US
+[0m11:34:24.062506 [error] [MainThread]:   Job ID: 6c24ca3f-004d-4e1f-85b6-9ee00d1d698d
+[0m11:34:24.062757 [error] [MainThread]:   
+[0m11:34:24.063004 [info ] [MainThread]: 
+[0m11:34:24.063251 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m11:34:24.063604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f987abac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f987a8c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9fb53c2050>]}
+[0m11:34:24.063866 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-22 11:35:05.864904 | 40691809-7076-452c-b487-1eb57e7ec7da ==============================
+[0m11:35:05.864917 [info ] [MainThread]: Running with dbt=1.3.1
+[0m11:35:05.865246 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m11:35:05.865363 [debug] [MainThread]: Tracking: tracking
+[0m11:35:05.866286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d1941600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8ef51f0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8f03788b0>]}
+[0m11:35:05.900518 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m11:35:05.901047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '40691809-7076-452c-b487-1eb57e7ec7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d1951690>]}
+[0m11:35:05.920547 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m11:35:05.927877 [debug] [MainThread]: Parsing macros/etc.sql
+[0m11:35:05.930571 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m11:35:05.953361 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m11:35:05.956474 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m11:35:05.959464 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m11:35:05.967622 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m11:35:05.969803 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+[0m11:35:05.988794 [debug] [MainThread]: Parsing macros/materializations/copy.sql
+[0m11:35:05.991030 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m11:35:05.993198 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m11:35:05.993925 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m11:35:05.994358 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m11:35:05.995099 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m11:35:05.995523 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m11:35:05.995808 [debug] [MainThread]: Parsing macros/utils/timestamps.sql
+[0m11:35:05.996595 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m11:35:05.997018 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m11:35:05.997305 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m11:35:05.997707 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m11:35:05.998154 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m11:35:05.998635 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m11:35:05.999071 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m11:35:06.000251 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m11:35:06.001258 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m11:35:06.001766 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m11:35:06.002119 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m11:35:06.002507 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m11:35:06.012436 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m11:35:06.015516 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m11:35:06.020262 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+[0m11:35:06.022583 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m11:35:06.031588 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m11:35:06.033102 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m11:35:06.034399 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m11:35:06.036140 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m11:35:06.042413 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m11:35:06.047866 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m11:35:06.051311 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m11:35:06.052814 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m11:35:06.055285 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m11:35:06.059935 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m11:35:06.073463 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m11:35:06.084151 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m11:35:06.091858 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m11:35:06.093024 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m11:35:06.101466 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m11:35:06.104595 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m11:35:06.105798 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m11:35:06.107029 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m11:35:06.109249 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m11:35:06.110167 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m11:35:06.113713 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m11:35:06.115257 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m11:35:06.118965 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m11:35:06.121247 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m11:35:06.132125 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+[0m11:35:06.136500 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m11:35:06.137519 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m11:35:06.144383 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m11:35:06.154480 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m11:35:06.159714 [debug] [MainThread]: Parsing macros/python_model/python.sql
+[0m11:35:06.163656 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m11:35:06.164278 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m11:35:06.164798 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m11:35:06.165830 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m11:35:06.166406 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m11:35:06.167444 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m11:35:06.168112 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m11:35:06.168837 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m11:35:06.170377 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m11:35:06.171112 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m11:35:06.171823 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m11:35:06.172553 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m11:35:06.173363 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m11:35:06.177695 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m11:35:06.178410 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m11:35:06.178979 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m11:35:06.179701 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m11:35:06.180527 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m11:35:06.181333 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m11:35:06.182161 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m11:35:06.182848 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m11:35:06.183590 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m11:35:06.184203 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m11:35:06.185003 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m11:35:06.186184 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m11:35:06.187551 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m11:35:06.188280 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m11:35:06.188977 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m11:35:06.189702 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m11:35:06.191272 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m11:35:06.192297 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m11:35:06.193257 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m11:35:06.379177 [debug] [MainThread]: 1699: static parser successfully parsed contractors_category.sql
+[0m11:35:06.466678 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_gusto.example
+
+[0m11:35:06.470458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '40691809-7076-452c-b487-1eb57e7ec7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d17f9120>]}
+[0m11:35:06.476029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '40691809-7076-452c-b487-1eb57e7ec7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d16ab340>]}
+[0m11:35:06.476447 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics
+[0m11:35:06.476789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40691809-7076-452c-b487-1eb57e7ec7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d171afe0>]}
+[0m11:35:06.477908 [info ] [MainThread]: 
+[0m11:35:06.478659 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m11:35:06.479599 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208"
+[0m11:35:06.479859 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:35:07.340765 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208_dbt_gusto_main"
+[0m11:35:07.341583 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:35:07.939932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40691809-7076-452c-b487-1eb57e7ec7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d16c0b20>]}
+[0m11:35:07.941298 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:35:07.941924 [info ] [MainThread]: 
+[0m11:35:07.946375 [debug] [Thread-1 (]: Began running node model.dbt_gusto.contractors_category
+[0m11:35:07.946678 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_gusto_main.contractors_category ............... [RUN]
+[0m11:35:07.947212 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_gusto.contractors_category"
+[0m11:35:07.947423 [debug] [Thread-1 (]: Began compiling node model.dbt_gusto.contractors_category
+[0m11:35:07.947576 [debug] [Thread-1 (]: Compiling model.dbt_gusto.contractors_category
+[0m11:35:07.950239 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_gusto.contractors_category"
+[0m11:35:07.953505 [debug] [Thread-1 (]: finished collecting timing info
+[0m11:35:07.953872 [debug] [Thread-1 (]: Began executing node model.dbt_gusto.contractors_category
+[0m11:35:07.993107 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_gusto.contractors_category"
+[0m11:35:07.993728 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:35:07.999265 [debug] [Thread-1 (]: On model.dbt_gusto.contractors_category: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_gusto", "target_name": "dev", "node_id": "model.dbt_gusto.contractors_category"} */
+
+  
+    
+
+    create or replace table `blu-api-dev-359208`.`dbt_gusto_main`.`contractors_category`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select distinct
+id
+, ein
+, type
+, uuid
+, email
+, zip
+, city
+, state
+, country
+, street_1
+, street_2
+, has_ein
+, has_ssn
+, version
+, is_active
+, last_name
+, onboarded
+, wage_type
+, company_id
+, first_name
+, start_date
+, work_state
+, hourly_rate
+, company_uuid
+, business_name
+, middle_initial
+, payment_method
+, onboarding_status
+, file_new_hire_report
+from `blu-api-dev-359208`.`Gusto`.`contractors` c
+left join `blu-api-dev-359208`.`Gusto`.`contractors_address` ca
+on c._airbyte_contractors_hashid = ca._airbyte_contractors_hashid
+    );
+  
+[0m11:35:11.195094 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=blu-api-dev-359208&j=bq:9d0811f3-77ff-418d-bc6d-e9fabe9b33e7:asia-south1&page=queryresults
+[0m11:35:11.216772 [debug] [Thread-1 (]: finished collecting timing info
+[0m11:35:11.217323 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40691809-7076-452c-b487-1eb57e7ec7da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8ef560700>]}
+[0m11:35:11.217646 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_gusto_main.contractors_category .......... [[32mCREATE TABLE (2.0 rows, 789.0 Bytes processed)[0m in 3.27s]
+[0m11:35:11.218019 [debug] [Thread-1 (]: Finished running node model.dbt_gusto.contractors_category
+[0m11:35:11.219089 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m11:35:11.219564 [info ] [MainThread]: 
+[0m11:35:11.219769 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.74 seconds (4.74s).
+[0m11:35:11.220004 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:35:11.220140 [debug] [MainThread]: Connection 'model.dbt_gusto.contractors_category' was properly closed.
+[0m11:35:11.225051 [info ] [MainThread]: 
+[0m11:35:11.225350 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:35:11.225711 [info ] [MainThread]: 
+[0m11:35:11.225925 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:35:11.226256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d1803bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d16c2950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8d16c1ea0>]}
+[0m11:35:11.226510 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-22 12:52:55.019851 | 9332fae9-f208-4e43-a53c-d158a2f30b13 ==============================
+[0m12:52:55.019862 [info ] [MainThread]: Running with dbt=1.3.1
+[0m12:52:55.020192 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['pay_shedules_category'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:52:55.020310 [debug] [MainThread]: Tracking: tracking
+[0m12:52:55.021370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c533580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c531660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c531720>]}
+[0m12:52:55.052857 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m12:52:55.053791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9332fae9-f208-4e43-a53c-d158a2f30b13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c542050>]}
+[0m12:52:55.071312 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m12:52:55.080634 [debug] [MainThread]: Parsing macros/etc.sql
+[0m12:52:55.082320 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m12:52:55.101859 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m12:52:55.103928 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m12:52:55.106323 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m12:52:55.113970 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m12:52:55.115743 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+[0m12:52:55.132652 [debug] [MainThread]: Parsing macros/materializations/copy.sql
+[0m12:52:55.135446 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m12:52:55.137865 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m12:52:55.138629 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m12:52:55.139078 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m12:52:55.139757 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m12:52:55.140139 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m12:52:55.140413 [debug] [MainThread]: Parsing macros/utils/timestamps.sql
+[0m12:52:55.141349 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m12:52:55.141963 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m12:52:55.142252 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m12:52:55.142632 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m12:52:55.143080 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m12:52:55.143497 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m12:52:55.143847 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m12:52:55.144838 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m12:52:55.145671 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m12:52:55.146106 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m12:52:55.146426 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m12:52:55.146800 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m12:52:55.155761 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m12:52:55.158427 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m12:52:55.162722 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+[0m12:52:55.164871 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m12:52:55.173132 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m12:52:55.174479 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m12:52:55.175742 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m12:52:55.177385 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m12:52:55.183229 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m12:52:55.188400 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m12:52:55.191655 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m12:52:55.193119 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m12:52:55.195531 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m12:52:55.199953 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m12:52:55.211056 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m12:52:55.220638 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m12:52:55.227770 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m12:52:55.228814 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m12:52:55.236682 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m12:52:55.239641 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m12:52:55.240741 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m12:52:55.241832 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m12:52:55.243905 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m12:52:55.244728 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m12:52:55.248084 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m12:52:55.249517 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m12:52:55.252973 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m12:52:55.255199 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m12:52:55.265327 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+[0m12:52:55.269378 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m12:52:55.270335 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m12:52:55.276718 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m12:52:55.286006 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m12:52:55.291062 [debug] [MainThread]: Parsing macros/python_model/python.sql
+[0m12:52:55.294756 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m12:52:55.295371 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m12:52:55.295833 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m12:52:55.296777 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m12:52:55.297324 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m12:52:55.298266 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m12:52:55.298925 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m12:52:55.299611 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m12:52:55.301004 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m12:52:55.301693 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m12:52:55.302352 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m12:52:55.302940 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m12:52:55.303474 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m12:52:55.307673 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m12:52:55.308387 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m12:52:55.308929 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m12:52:55.309648 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m12:52:55.310458 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m12:52:55.311263 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m12:52:55.312035 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m12:52:55.312661 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m12:52:55.313388 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m12:52:55.314002 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m12:52:55.314813 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m12:52:55.315902 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m12:52:55.317214 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m12:52:55.317952 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m12:52:55.318664 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m12:52:55.319402 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m12:52:55.320948 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m12:52:55.321999 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m12:52:55.322968 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m12:52:55.533333 [debug] [MainThread]: 1699: static parser successfully parsed pay_shedules_category.sql
+[0m12:52:55.541975 [debug] [MainThread]: 1699: static parser successfully parsed contractors_category.sql
+[0m12:52:55.603760 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'pay_schedules_category' in the 'models' section of file 'models/Schema.yml'
+[0m12:52:55.637270 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_gusto.stg_gusto
+
+[0m12:52:55.643519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9332fae9-f208-4e43-a53c-d158a2f30b13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c40cc70>]}
+[0m12:52:55.650891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9332fae9-f208-4e43-a53c-d158a2f30b13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c518310>]}
+[0m12:52:55.651359 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[0m12:52:55.651744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9332fae9-f208-4e43-a53c-d158a2f30b13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c3133a0>]}
+[0m12:52:55.653140 [info ] [MainThread]: 
+[0m12:52:55.653961 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m12:52:55.654996 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208"
+[0m12:52:55.655302 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:52:56.827169 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208_dbt_gusto_main"
+[0m12:52:56.827722 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:52:57.534059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9332fae9-f208-4e43-a53c-d158a2f30b13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c40c820>]}
+[0m12:52:57.535434 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:52:57.536107 [info ] [MainThread]: 
+[0m12:52:57.541760 [debug] [Thread-1 (]: Began running node model.dbt_gusto.pay_shedules_category
+[0m12:52:57.542510 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_gusto_main.pay_shedules_category .............. [RUN]
+[0m12:52:57.544089 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_gusto.pay_shedules_category"
+[0m12:52:57.544546 [debug] [Thread-1 (]: Began compiling node model.dbt_gusto.pay_shedules_category
+[0m12:52:57.544908 [debug] [Thread-1 (]: Compiling model.dbt_gusto.pay_shedules_category
+[0m12:52:57.551279 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_gusto.pay_shedules_category"
+[0m12:52:57.552167 [debug] [Thread-1 (]: finished collecting timing info
+[0m12:52:57.552821 [debug] [Thread-1 (]: Began executing node model.dbt_gusto.pay_shedules_category
+[0m12:52:57.598212 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_gusto.pay_shedules_category"
+[0m12:52:57.598742 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:52:57.602614 [debug] [Thread-1 (]: On model.dbt_gusto.pay_shedules_category: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_gusto", "target_name": "dev", "node_id": "model.dbt_gusto.pay_shedules_category"} */
+
+  
+    
+
+    create or replace table `blu-api-dev-359208`.`dbt_gusto_main`.`pay_shedules_category`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select distinct
+, id
+, name
+, uuid
+, day_1
+, day_2
+, version
+, frequency
+, auto_pilot
+, anchor_pay_date
+, anchor_end_of_pay_period
+from `blu-api-dev-359208`.`Gusto`.`pay_schedules`
+    );
+  
+[0m12:52:58.717091 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected "," at [14:1]')
+[0m12:52:59.972679 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=blu-api-dev-359208&j=bq:asia-south1:b9c9f5b2-2a4f-4663-bf3f-5764b905f79b&page=queryresults
+[0m12:52:59.973776 [debug] [Thread-1 (]: finished collecting timing info
+[0m12:52:59.975066 [debug] [Thread-1 (]: Database Error in model pay_shedules_category (models/pay_shedules_category.sql)
+  Syntax error: Unexpected "," at [14:1]
+  compiled Code at target/run/dbt_gusto/models/pay_shedules_category.sql
+[0m12:52:59.975773 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9332fae9-f208-4e43-a53c-d158a2f30b13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9087346aa0>]}
+[0m12:52:59.976641 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model dbt_gusto_main.pay_shedules_category ..... [[31mERROR[0m in 2.43s]
+[0m12:52:59.977515 [debug] [Thread-1 (]: Finished running node model.dbt_gusto.pay_shedules_category
+[0m12:52:59.978412 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m12:52:59.978896 [info ] [MainThread]: 
+[0m12:52:59.979609 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.33 seconds (4.33s).
+[0m12:52:59.980239 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:52:59.980754 [debug] [MainThread]: Connection 'model.dbt_gusto.pay_shedules_category' was properly closed.
+[0m12:52:59.992116 [info ] [MainThread]: 
+[0m12:52:59.992800 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m12:52:59.993694 [info ] [MainThread]: 
+[0m12:52:59.994151 [error] [MainThread]: [33mDatabase Error in model pay_shedules_category (models/pay_shedules_category.sql)[0m
+[0m12:52:59.995028 [error] [MainThread]:   Syntax error: Unexpected "," at [14:1]
+[0m12:52:59.995335 [error] [MainThread]:   compiled Code at target/run/dbt_gusto/models/pay_shedules_category.sql
+[0m12:52:59.995900 [info ] [MainThread]: 
+[0m12:52:59.996198 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m12:52:59.996619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c3edd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c3ed750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f908c40f9a0>]}
+[0m12:52:59.996959 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-22 12:53:12.173885 | 859b6173-548d-49d1-a6fa-5f51a4a981d9 ==============================
+[0m12:53:12.173896 [info ] [MainThread]: Running with dbt=1.3.1
+[0m12:53:12.174214 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['pay_shedules_category'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:53:12.174342 [debug] [MainThread]: Tracking: tracking
+[0m12:53:12.175293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32567ff580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32567fd660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f32567fd720>]}
+[0m12:53:12.223217 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:53:12.224064 [debug] [MainThread]: Partial parsing: updated file: dbt_gusto://models/pay_shedules_category.sql
+[0m12:53:12.239932 [debug] [MainThread]: 1699: static parser successfully parsed pay_shedules_category.sql
+[0m12:53:12.258292 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_gusto.stg_gusto
+
+[0m12:53:12.262347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '859b6173-548d-49d1-a6fa-5f51a4a981d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3255422980>]}
+[0m12:53:12.267254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '859b6173-548d-49d1-a6fa-5f51a4a981d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f325659bfa0>]}
+[0m12:53:12.267526 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics
+[0m12:53:12.267743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '859b6173-548d-49d1-a6fa-5f51a4a981d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f325656f280>]}
+[0m12:53:12.268703 [info ] [MainThread]: 
+[0m12:53:12.269273 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m12:53:12.270018 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208"
+[0m12:53:12.270246 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:53:13.485496 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208_dbt_gusto_main"
+[0m12:53:13.486041 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:53:14.224706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '859b6173-548d-49d1-a6fa-5f51a4a981d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f325659ae00>]}
+[0m12:53:14.226060 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:53:14.226747 [info ] [MainThread]: 
+[0m12:53:14.235785 [debug] [Thread-1 (]: Began running node model.dbt_gusto.pay_shedules_category
+[0m12:53:14.236511 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_gusto_main.pay_shedules_category .............. [RUN]
+[0m12:53:14.237831 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_gusto.pay_shedules_category"
+[0m12:53:14.238191 [debug] [Thread-1 (]: Began compiling node model.dbt_gusto.pay_shedules_category
+[0m12:53:14.238485 [debug] [Thread-1 (]: Compiling model.dbt_gusto.pay_shedules_category
+[0m12:53:14.244985 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_gusto.pay_shedules_category"
+[0m12:53:14.245583 [debug] [Thread-1 (]: finished collecting timing info
+[0m12:53:14.245875 [debug] [Thread-1 (]: Began executing node model.dbt_gusto.pay_shedules_category
+[0m12:53:14.287266 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_gusto.pay_shedules_category"
+[0m12:53:14.288353 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:53:14.293945 [debug] [Thread-1 (]: On model.dbt_gusto.pay_shedules_category: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_gusto", "target_name": "dev", "node_id": "model.dbt_gusto.pay_shedules_category"} */
+
+  
+    
+
+    create or replace table `blu-api-dev-359208`.`dbt_gusto_main`.`pay_shedules_category`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select distinct
+id
+, name
+, uuid
+, day_1
+, day_2
+, version
+, frequency
+, auto_pilot
+, anchor_pay_date
+, anchor_end_of_pay_period
+from `blu-api-dev-359208`.`Gusto`.`pay_schedules`
+    );
+  
+[0m12:53:17.048148 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=blu-api-dev-359208&j=bq:ae25844c-222e-4666-a4df-781df25c1286:asia-south1&page=queryresults
+[0m12:53:17.069864 [debug] [Thread-1 (]: finished collecting timing info
+[0m12:53:17.070351 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '859b6173-548d-49d1-a6fa-5f51a4a981d9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3256705cc0>]}
+[0m12:53:17.070651 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_gusto_main.pay_shedules_category ......... [[32mCREATE TABLE (1.0 rows, 115.0 Bytes processed)[0m in 2.83s]
+[0m12:53:17.070986 [debug] [Thread-1 (]: Finished running node model.dbt_gusto.pay_shedules_category
+[0m12:53:17.072311 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m12:53:17.072714 [info ] [MainThread]: 
+[0m12:53:17.072925 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.80 seconds (4.80s).
+[0m12:53:17.073134 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:53:17.073313 [debug] [MainThread]: Connection 'model.dbt_gusto.pay_shedules_category' was properly closed.
+[0m12:53:17.078380 [info ] [MainThread]: 
+[0m12:53:17.078668 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:53:17.078974 [info ] [MainThread]: 
+[0m12:53:17.079172 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:53:17.079478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f327445c610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3256705780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f325659baf0>]}
+[0m12:53:17.079763 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-22 13:35:26.986453 | f7122ea9-ddf3-4511-b14d-de56b2f10073 ==============================
+[0m13:35:26.986466 [info ] [MainThread]: Running with dbt=1.3.1
+[0m13:35:26.987337 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['pay_periods_transaction'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m13:35:26.987731 [debug] [MainThread]: Tracking: tracking
+[0m13:35:26.989255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc65f3580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc65f1660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc65f1720>]}
+[0m13:35:27.038521 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:35:27.039017 [debug] [MainThread]: Partial parsing: added file: dbt_gusto://models/pay_periods_transaction.sql
+[0m13:35:27.051813 [debug] [MainThread]: 1699: static parser successfully parsed pay_periods_transaction.sql
+[0m13:35:27.060848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc639b5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc63b7700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdfc63b7730>]}
+[0m13:35:27.061138 [debug] [MainThread]: Flushing usage events
+[0m13:35:28.067964 [error] [MainThread]: Encountered an error:
+Compilation Error in model pay_periods_transaction (models/pay_periods_transaction.sql)
+  Model 'model.dbt_gusto.pay_periods_transaction' (models/pay_periods_transaction.sql) depends on a source named 'gusto.pay_periods_payroll' which was not found
+
+
+============================== 2022-12-22 13:35:41.463713 | 40b9e8fb-ab86-45a2-a79b-f2953f80c234 ==============================
+[0m13:35:41.463724 [info ] [MainThread]: Running with dbt=1.3.1
+[0m13:35:41.464039 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['pay_periods_transaction'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m13:35:41.464168 [debug] [MainThread]: Tracking: tracking
+[0m13:35:41.465188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4545843580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4545841660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4545841720>]}
+[0m13:35:41.514488 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m13:35:41.515044 [debug] [MainThread]: Partial parsing: added file: dbt_gusto://models/pay_periods_transaction.sql
+[0m13:35:41.515532 [debug] [MainThread]: Partial parsing: deleted source source.dbt_gusto.gusto.contractors
+[0m13:35:41.515729 [debug] [MainThread]: Partial parsing: deleted source source.dbt_gusto.gusto.contractors_address
+[0m13:35:41.515979 [debug] [MainThread]: Partial parsing: deleted source source.dbt_gusto.gusto.pay_schedules
+[0m13:35:41.516178 [debug] [MainThread]: Partial parsing: update schema file: dbt_gusto://models/Schema.yml
+[0m13:35:41.530351 [debug] [MainThread]: 1699: static parser successfully parsed pay_periods_transaction.sql
+[0m13:35:41.540503 [debug] [MainThread]: 1699: static parser successfully parsed contractors_category.sql
+[0m13:35:41.543115 [debug] [MainThread]: 1699: static parser successfully parsed pay_shedules_category.sql
+[0m13:35:41.565198 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_gusto.stg_gusto
+
+[0m13:35:41.569036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '40b9e8fb-ab86-45a2-a79b-f2953f80c234', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f454446bac0>]}
+[0m13:35:41.575132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '40b9e8fb-ab86-45a2-a79b-f2953f80c234', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45455dbfa0>]}
+[0m13:35:41.575552 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+[0m13:35:41.575892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40b9e8fb-ab86-45a2-a79b-f2953f80c234', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f456344c700>]}
+[0m13:35:41.576997 [info ] [MainThread]: 
+[0m13:35:41.577696 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m13:35:41.578700 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208"
+[0m13:35:41.578939 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:35:42.454523 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208_dbt_gusto_main"
+[0m13:35:42.455393 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:35:43.031364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '40b9e8fb-ab86-45a2-a79b-f2953f80c234', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45455dae30>]}
+[0m13:35:43.032721 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:35:43.033390 [info ] [MainThread]: 
+[0m13:35:43.038125 [debug] [Thread-1 (]: Began running node model.dbt_gusto.pay_periods_transaction
+[0m13:35:43.038456 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_gusto_main.pay_periods_transaction ............ [RUN]
+[0m13:35:43.038965 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_gusto.pay_periods_transaction"
+[0m13:35:43.039126 [debug] [Thread-1 (]: Began compiling node model.dbt_gusto.pay_periods_transaction
+[0m13:35:43.039251 [debug] [Thread-1 (]: Compiling model.dbt_gusto.pay_periods_transaction
+[0m13:35:43.045075 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_gusto.pay_periods_transaction"
+[0m13:35:43.045868 [debug] [Thread-1 (]: finished collecting timing info
+[0m13:35:43.046366 [debug] [Thread-1 (]: Began executing node model.dbt_gusto.pay_periods_transaction
+[0m13:35:43.092709 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_gusto.pay_periods_transaction"
+[0m13:35:43.093231 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:35:43.098653 [debug] [Thread-1 (]: On model.dbt_gusto.pay_periods_transaction: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_gusto", "target_name": "dev", "node_id": "model.dbt_gusto.pay_periods_transaction"} */
+
+  
+    
+
+    create or replace table `blu-api-dev-359208`.`dbt_gusto_main`.`pay_periods_transaction`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select distinct
+ppp.processed
+,ppp.payroll_deadline
+,pp.end_date
+,pp.start_date
+,pp.pay_schedule_id
+,pp.pay_schedule_uuid
+,ppe.id as employee_id
+,ppe.uuid as employee_uuid
+,ppe.job_ids as employee_job_ids
+,ppe.job_uuids as employee_job_uuids
+from `blu-api-dev-359208`.`Gusto`.`pay_periods` pp 
+left join `blu-api-dev-359208`.`Gusto`.`pay_periods_eligible_employees` ppe
+on ppe._airbyte_pay_periods_hashid = ppe._airbyte_pay_periods_hashid
+left join `blu-api-dev-359208`.`Gusto`.`pay_periods_payroll` ppp
+on pp._airbyte_pay_periods_hashid = ppp._airbyte_pay_periods_hashid
+    );
+  
+[0m13:35:44.026824 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Column employee_job_ids of type ARRAY cannot be used in SELECT DISTINCT at [22:2]')
+[0m13:35:44.787907 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=blu-api-dev-359208&j=bq:asia-south1:71de5749-61f2-4d92-8178-040fa49a355f&page=queryresults
+[0m13:35:44.788744 [debug] [Thread-1 (]: finished collecting timing info
+[0m13:35:44.789624 [debug] [Thread-1 (]: Database Error in model pay_periods_transaction (models/pay_periods_transaction.sql)
+  Column employee_job_ids of type ARRAY cannot be used in SELECT DISTINCT at [22:2]
+  compiled Code at target/run/dbt_gusto/models/pay_periods_transaction.sql
+[0m13:35:44.790088 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '40b9e8fb-ab86-45a2-a79b-f2953f80c234', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f45444a0dc0>]}
+[0m13:35:44.790708 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model dbt_gusto_main.pay_periods_transaction ... [[31mERROR[0m in 1.75s]
+[0m13:35:44.791470 [debug] [Thread-1 (]: Finished running node model.dbt_gusto.pay_periods_transaction
+[0m13:35:44.793468 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m13:35:44.794467 [info ] [MainThread]: 
+[0m13:35:44.795037 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.22 seconds (3.22s).
+[0m13:35:44.795505 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:35:44.795748 [debug] [MainThread]: Connection 'model.dbt_gusto.pay_periods_transaction' was properly closed.
+[0m13:35:44.804938 [info ] [MainThread]: 
+[0m13:35:44.805376 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:35:44.805682 [info ] [MainThread]: 
+[0m13:35:44.805920 [error] [MainThread]: [33mDatabase Error in model pay_periods_transaction (models/pay_periods_transaction.sql)[0m
+[0m13:35:44.806154 [error] [MainThread]:   Column employee_job_ids of type ARRAY cannot be used in SELECT DISTINCT at [22:2]
+[0m13:35:44.806380 [error] [MainThread]:   compiled Code at target/run/dbt_gusto/models/pay_periods_transaction.sql
+[0m13:35:44.806608 [info ] [MainThread]: 
+[0m13:35:44.806855 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m13:35:44.807200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4564607580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f454561ee90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f454446a7d0>]}
+[0m13:35:44.807467 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-22 13:38:00.206468 | e2384659-5e0f-41c5-b6e3-d76aaad50e7e ==============================
+[0m13:38:00.206480 [info ] [MainThread]: Running with dbt=1.3.1
+[0m13:38:00.206804 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['pay_periods_transaction'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m13:38:00.206946 [debug] [MainThread]: Tracking: tracking
+[0m13:38:00.207951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f993a06b580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f993a069660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f993a069720>]}
+[0m13:38:00.256242 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:38:00.256956 [debug] [MainThread]: Partial parsing: updated file: dbt_gusto://models/pay_periods_transaction.sql
+[0m13:38:00.274841 [debug] [MainThread]: 1699: static parser successfully parsed pay_periods_transaction.sql
+[0m13:38:00.300329 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_gusto.stg_gusto
+
+[0m13:38:00.304214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e2384659-5e0f-41c5-b6e3-d76aaad50e7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9938cc40d0>]}
+[0m13:38:00.311311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e2384659-5e0f-41c5-b6e3-d76aaad50e7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9939e7f910>]}
+[0m13:38:00.311731 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+[0m13:38:00.312049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2384659-5e0f-41c5-b6e3-d76aaad50e7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9958a8e620>]}
+[0m13:38:00.313162 [info ] [MainThread]: 
+[0m13:38:00.313899 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m13:38:00.314832 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208"
+[0m13:38:00.315092 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:38:01.063900 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208_dbt_gusto_main"
+[0m13:38:01.064680 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:38:01.645188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e2384659-5e0f-41c5-b6e3-d76aaad50e7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9939e7e0b0>]}
+[0m13:38:01.646597 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:38:01.647319 [info ] [MainThread]: 
+[0m13:38:01.651736 [debug] [Thread-1 (]: Began running node model.dbt_gusto.pay_periods_transaction
+[0m13:38:01.652023 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_gusto_main.pay_periods_transaction ............ [RUN]
+[0m13:38:01.652550 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_gusto.pay_periods_transaction"
+[0m13:38:01.652696 [debug] [Thread-1 (]: Began compiling node model.dbt_gusto.pay_periods_transaction
+[0m13:38:01.652809 [debug] [Thread-1 (]: Compiling model.dbt_gusto.pay_periods_transaction
+[0m13:38:01.658207 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_gusto.pay_periods_transaction"
+[0m13:38:01.658759 [debug] [Thread-1 (]: finished collecting timing info
+[0m13:38:01.659101 [debug] [Thread-1 (]: Began executing node model.dbt_gusto.pay_periods_transaction
+[0m13:38:01.693719 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_gusto.pay_periods_transaction"
+[0m13:38:01.694324 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:38:01.698573 [debug] [Thread-1 (]: On model.dbt_gusto.pay_periods_transaction: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_gusto", "target_name": "dev", "node_id": "model.dbt_gusto.pay_periods_transaction"} */
+
+  
+    
+
+    create or replace table `blu-api-dev-359208`.`dbt_gusto_main`.`pay_periods_transaction`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select
+ppp.processed
+,ppp.payroll_deadline
+,pp.end_date
+,pp.start_date
+,pp.pay_schedule_id
+,pp.pay_schedule_uuid
+,ppe.id as employee_id
+,ppe.uuid as employee_uuid
+,ppe.job_ids as employee_job_ids
+,ppe.job_uuids as employee_job_uuids
+from `blu-api-dev-359208`.`Gusto`.`pay_periods` pp 
+left join `blu-api-dev-359208`.`Gusto`.`pay_periods_eligible_employees` ppe
+on ppe._airbyte_pay_periods_hashid = ppe._airbyte_pay_periods_hashid
+left join `blu-api-dev-359208`.`Gusto`.`pay_periods_payroll` ppp
+on pp._airbyte_pay_periods_hashid = ppp._airbyte_pay_periods_hashid
+    );
+  
+[0m13:38:04.339159 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=blu-api-dev-359208&j=bq:e2a0c653-6a37-4388-92ac-f2367fe4e39a:asia-south1&page=queryresults
+[0m13:38:04.351405 [debug] [Thread-1 (]: finished collecting timing info
+[0m13:38:04.351854 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e2384659-5e0f-41c5-b6e3-d76aaad50e7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9939f711e0>]}
+[0m13:38:04.352148 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_gusto_main.pay_periods_transaction ....... [[32mCREATE TABLE (1.1k rows, 16.2 KB processed)[0m in 2.70s]
+[0m13:38:04.352525 [debug] [Thread-1 (]: Finished running node model.dbt_gusto.pay_periods_transaction
+[0m13:38:04.353570 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m13:38:04.353973 [info ] [MainThread]: 
+[0m13:38:04.354197 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.04 seconds (4.04s).
+[0m13:38:04.354382 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:38:04.354505 [debug] [MainThread]: Connection 'model.dbt_gusto.pay_periods_transaction' was properly closed.
+[0m13:38:04.372351 [info ] [MainThread]: 
+[0m13:38:04.372753 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:38:04.373086 [info ] [MainThread]: 
+[0m13:38:04.373384 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:38:04.373780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9958e575b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9939e8e290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9939e8c250>]}
+[0m13:38:04.374053 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-12-29 05:15:56.711400 | a8bd105e-99fc-4d5a-8bf2-f6ce333ed74c ==============================
+[0m05:15:56.711412 [info ] [MainThread]: Running with dbt=1.3.1
+[0m05:15:56.711832 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/chandu/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['contractors_category'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m05:15:56.711964 [debug] [MainThread]: Tracking: tracking
+[0m05:15:56.712980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f460c2bcdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f460c2bceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f460c2bce50>]}
+[0m05:15:56.762027 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m05:15:56.762480 [debug] [MainThread]: Partial parsing: updated file: dbt_gusto://models/contractors_category.sql
+[0m05:15:56.772010 [debug] [MainThread]: 1699: static parser successfully parsed contractors_category.sql
+[0m05:15:56.793235 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_gusto.stg_gusto
+
+[0m05:15:56.797019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a8bd105e-99fc-4d5a-8bf2-f6ce333ed74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f46070380d0>]}
+[0m05:15:56.802646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a8bd105e-99fc-4d5a-8bf2-f6ce333ed74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4607ff3fd0>]}
+[0m05:15:56.802943 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 319 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+[0m05:15:56.803169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a8bd105e-99fc-4d5a-8bf2-f6ce333ed74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4607f239d0>]}
+[0m05:15:56.804032 [info ] [MainThread]: 
+[0m05:15:56.804588 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m05:15:56.805420 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208"
+[0m05:15:56.805647 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:15:57.996944 [debug] [ThreadPool]: Acquiring new bigquery connection "list_blu-api-dev-359208_dbt_gusto_main"
+[0m05:15:57.997694 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m05:15:58.829128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a8bd105e-99fc-4d5a-8bf2-f6ce333ed74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4607ff1360>]}
+[0m05:15:58.830510 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m05:15:58.831165 [info ] [MainThread]: 
+[0m05:15:58.842309 [debug] [Thread-1 (]: Began running node model.dbt_gusto.contractors_category
+[0m05:15:58.842884 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_gusto_main.contractors_category ............... [RUN]
+[0m05:15:58.843412 [debug] [Thread-1 (]: Acquiring new bigquery connection "model.dbt_gusto.contractors_category"
+[0m05:15:58.843568 [debug] [Thread-1 (]: Began compiling node model.dbt_gusto.contractors_category
+[0m05:15:58.843686 [debug] [Thread-1 (]: Compiling model.dbt_gusto.contractors_category
+[0m05:15:58.846457 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_gusto.contractors_category"
+[0m05:15:58.846954 [debug] [Thread-1 (]: finished collecting timing info
+[0m05:15:58.847163 [debug] [Thread-1 (]: Began executing node model.dbt_gusto.contractors_category
+[0m05:15:58.860926 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m05:15:59.722711 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_gusto.contractors_category"
+[0m05:15:59.723099 [debug] [Thread-1 (]: On model.dbt_gusto.contractors_category: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "dbt_gusto", "target_name": "dev", "node_id": "model.dbt_gusto.contractors_category"} */
+
+  
+    
+
+    create or replace table `blu-api-dev-359208`.`dbt_gusto_main`.`contractors_category`
+    
+    
+    OPTIONS()
+    as (
+      
+
+select
+id contractors_id
+,ein
+,type
+,uuid
+,email
+,json_extract_scalar(address,'$.street_1') street_1
+,json_extract_scalar(address,'$.street_2') street_2
+,json_extract_scalar(address,'$.city') city
+,json_extract_scalar(address,'$.state') state
+,json_extract_scalar(address,'$.country') country
+,json_extract_scalar(address,'$.zip') zip
+,has_ein
+,has_ssn
+,version
+,is_active
+,last_name
+,onboarded
+,wage_type
+,company_id
+,first_name
+,start_date
+,work_state
+,hourly_rate
+,company_uuid
+,business_name
+,middle_initial
+,payment_method
+,onboarding_status
+,file_new_hire_report
+from Gusto.contractors
+    );
+  
+[0m05:16:02.601005 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=blu-api-dev-359208&j=bq:4e80fc87-cea6-47ca-9ee5-f3269f29a2dc:asia-south1&page=queryresults
+[0m05:16:02.614834 [debug] [Thread-1 (]: finished collecting timing info
+[0m05:16:02.615268 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a8bd105e-99fc-4d5a-8bf2-f6ce333ed74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f460c1cbac0>]}
+[0m05:16:02.615553 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_gusto_main.contractors_category .......... [[32mCREATE TABLE (2.0 rows, 777.0 Bytes processed)[0m in 3.77s]
+[0m05:16:02.615906 [debug] [Thread-1 (]: Finished running node model.dbt_gusto.contractors_category
+[0m05:16:02.617023 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m05:16:02.617439 [info ] [MainThread]: 
+[0m05:16:02.617648 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.81 seconds (5.81s).
+[0m05:16:02.617846 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:16:02.617936 [debug] [MainThread]: Connection 'model.dbt_gusto.contractors_category' was properly closed.
+[0m05:16:02.628879 [info ] [MainThread]: 
+[0m05:16:02.629174 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:16:02.629405 [info ] [MainThread]: 
+[0m05:16:02.629580 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m05:16:02.629854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f460c124d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4607faff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4606ffccd0>]}
+[0m05:16:02.632580 [debug] [MainThread]: Flushing usage events
