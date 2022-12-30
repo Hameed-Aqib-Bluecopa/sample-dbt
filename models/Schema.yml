@@ -5,16 +5,16 @@ sources:
     database: blu-api-dev-359208
     schema: Gusto
     tables:
-      - name: contractors
-      - name: contractor_payments
-      - name: employees
-      - name: earning_types
-      - name: users
+      # - name: contractors
+      # - name: contractor_payments
+      # - name: employees
+      # - name: earning_types
+      # - name: users
       - name: pay_rolls
-      - name: locations
-      - name: company_benefits
-      - name: company_benefits_by_gusto
-      - name: company_benefits_by_gusto_requirements
+      # - name: locations
+      # - name: company_benefits
+      # - name: company_benefits_by_gusto
+      # - name: company_benefits_by_gusto_requirements
       # - name: 
       # - name: 
       # - name: 
